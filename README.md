@@ -18,7 +18,7 @@ influence of text prompts versus style reference images.
 2. Clone this repository:
 ```bash
 cd custom_nodes
-git clone https://github.com/yourusername/apply_style_model_adjust
+git clone https://github.com/ShmuelRonen/ComfyUI-Apply_Style_Model_Adjust.git
 ```
 
 Or download and extract the zip file into your `ComfyUI/custom_nodes` folder.
@@ -38,16 +38,6 @@ conditioning/style_model category.
   - Medium values (0.4-0.7): Balanced mix
   - High values (0.8-1.0): Style reference dominates
 
-### Example Workflow Setup
-
-1. Add standard nodes:
-   - Load CLIP Vision
-   - Load Style Model (FLUX)
-   - Load Image (reference)
-   - CLIP Text Encode (prompt)
-2. Connect to Apply Style Model Adjust
-3. Adjust strength parameter for desired balance
-
 ## Difference from Standard Style Model Apply
 
 The standard Style Model Apply node can sometimes:
@@ -60,14 +50,6 @@ This adjusted version:
 - Provides smoother strength transitions
 - Reduces maximum style influence
 - Better handles text instructions while maintaining style
-
-## Technical Notes
-
-The node uses an improved conditioning formula:
-```python
-base_cond = t[0] * (3.0 - 2.0 * strength)  # Enhanced prompt influence
-style_cond = cond * (strength * 0.7)        # Controlled style influence
-```
 
 ### FLUX Model Note
 
