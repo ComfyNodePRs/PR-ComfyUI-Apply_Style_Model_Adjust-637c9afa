@@ -5,6 +5,8 @@ A custom node that provides enhanced control over style transfer balance when
 using FLUX style models in ComfyUI. This node offers better control over the 
 influence of text prompts versus style reference images.
 
+![image](https://github.com/user-attachments/assets/17bbd3a9-3615-41e1-aed6-1ca34db5d36c)
+
 ## Features
 
 - Enhanced prompt influence when reducing style strength
