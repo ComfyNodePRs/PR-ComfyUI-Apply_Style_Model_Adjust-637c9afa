@@ -1,0 +1,14 @@
+[project]
+name = "comfyui-apply_style_model_adjust"
+description = "A custom node that provides enhanced control over style transfer balance when using FLUX style models in ComfyUI. This node offers better control over the influence of text prompts versus style reference images."
+version = "1.0.0"
+license = {file = "LICENSE"}
+
+[project.urls]
+Repository = "https://github.com/ShmuelRonen/ComfyUI-Apply_Style_Model_Adjust"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "ComfyUI-Apply_Style_Model_Adjust"
+Icon = ""
